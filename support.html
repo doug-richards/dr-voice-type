@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DR Voice Type Support</title>
+<style>
+  :root { --bg: #ffffff; --fg: #111; --muted: #555; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #eee; --muted: #aaa; } }
+  body { background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 19px; margin-top: 28px; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>DR Voice Type Support</h1>
+<p>Questions or problems? <a href="https://github.com/doug-richards/dr-voice-type/issues/new">Send a support request</a> — include your iPhone model and iOS version.</p>
+
+<h2>How do I turn on the keyboard?</h2>
+<p>Settings app → General → Keyboard → Keyboards → Add New Keyboard → DR Voice Type. Then tap DR Voice Type in that list and turn on Allow Full Access (needed for voice only). In any app, hold or tap the globe key to switch to DR Voice Type.</p>
+
+<h2>Why does the app open when I tap the mic?</h2>
+<p>iOS doesn't let keyboards use the microphone, so the DR Voice Type app opens for a moment to start listening. Go back to what you were writing (the "&lt;" link at the top left, or swipe right along the bottom edge) and keep talking. The session stays on for the length you choose in Settings, so you only do this once.</p>
+
+<h2>How do I stop listening?</h2>
+<p>Tap "Mic off" in the keyboard. The session also ends on its own after the length set in Settings.</p>
+
+<h2>The cleanup isn't changing much</h2>
+<p>The free cleanup uses your iPhone's built-in AI when it's available and turned on (Settings app → Apple Intelligence &amp; Siri); otherwise simple rules are used. DR Voice Type → Settings → Cleanup shows which one is active. For the most accurate cleanup, paste your own Claude API key under "Upgrade: Claude AI polish".</p>
+
+<h2>Where do I get a Claude API key?</h2>
+<p>At <a href="https://console.anthropic.com">console.anthropic.com</a> → API Keys. Add a little credit to your Anthropic account; a dictation usually costs well under a cent.</p>
+
+<h2>The keyboard doesn't show up in some apps</h2>
+<p>Password fields always use Apple's keyboard, and some work-managed apps block other keyboards. That's set by iOS or your organization, not by DR Voice Type.</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy-policy.html">privacy policy</a>. In short: no accounts, no tracking, audio is never saved, and everything stays on your phone unless you add your own Claude key.</p>
+
+<p class="muted">Swipe typing powered by FUTO Swipe.</p>
+</main>
+</body>
+</html>

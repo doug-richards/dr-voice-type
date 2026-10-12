@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DR Voice Type Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #111; --muted: #555; --accent: #19c94b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #eee; --muted: #aaa; } }
+  body { background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  .muted { color: var(--muted); }
+  li { margin: 6px 0; }
+  .box { border-left: 4px solid var(--accent); padding: 4px 0 4px 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>DR Voice Type Privacy Policy</h1>
+<p class="muted">Effective October 12, 2026</p>
+
+<p class="box"><strong>Short version:</strong> DR Voice Type has no accounts, no ads, no analytics and no servers. Your voice and your text stay on your iPhone, unless you choose to add your own Claude API key — then the text (never audio) of your dictations is sent to Anthropic to be polished.</p>
+
+<h2>What the app does with your voice</h2>
+<ul>
+  <li>When you start a dictation, the app listens through the microphone and turns your speech into text using Apple's speech recognition.</li>
+  <li>With <strong>On-device only</strong> turned on (the default), recognition happens entirely on your iPhone. If you turn it off, Apple's speech service may process the audio under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+  <li>Audio is never saved and never sent to us. The microphone is only used during a listening session you start; the orange microphone indicator shows whenever it is on.</li>
+</ul>
+
+<h2>Text cleanup</h2>
+<ul>
+  <li><strong>Default:</strong> your iPhone's built-in on-device AI (or simple on-device rules on phones without it) cleans up the text. Nothing leaves your phone.</li>
+  <li><strong>Optional Claude upgrade:</strong> if you paste your own Anthropic API key, the transcript text, the text just before your cursor (for context), and the words in your Dictionary are sent to Anthropic's API with your key to be cleaned up. Audio is never sent. Anthropic handles this data under <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a> and the terms of your Anthropic account. Your key is stored in your iPhone's Keychain and is only sent to Anthropic. Remove the key in Settings at any time to stop this.</li>
+</ul>
+
+<h2>The keyboard</h2>
+<ul>
+  <li>Typing, swipe typing and word suggestions run entirely inside the keyboard on your phone. The keyboard makes no network requests and does not record what you type.</li>
+  <li>"Allow Full Access" lets the keyboard pass text to and from the DR Voice Type app on your phone (the dictated text, and the text before your cursor so punctuation and capitals fit). It is needed only for voice.</li>
+</ul>
+
+<h2>What is stored on your iPhone</h2>
+<ul>
+  <li>Your settings, Dictionary and Snippets.</li>
+  <li>History: your last 100 dictations, so you can find or re-insert them. You can clear it any time in the History tab.</li>
+  <li>All of this stays on your device and is deleted when you delete the app.</li>
+</ul>
+
+<h2>What we collect</h2>
+<p>We (the developer) receive none of your data. We don't run servers, we don't use analytics or advertising SDKs, and we don't track you across apps or websites. The only ways data leaves your phone are the two described above, both under your control: the optional Claude upgrade (text sent to Anthropic with your own key), and Apple's speech service if you turn off "On-device only".</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects no personal information from anyone.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+<h2>Contact</h2>
+<p><a href="https://github.com/doug-richards/dr-voice-type/issues/new">Send a question or request</a></p>
+</main>
+</body>
+</html>
