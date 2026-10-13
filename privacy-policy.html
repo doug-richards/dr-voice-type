@@ -25,7 +25,8 @@
 
 <h2>What the app does with your voice</h2>
 <ul>
-  <li>When you start a dictation, the app listens through the microphone and turns your speech into text using Apple's speech recognition.</li>
+  <li>When you start a dictation, the app listens through the microphone and turns your speech into text on your iPhone with Parakeet, an open speech-recognition model by NVIDIA. Apple's speech recognition also runs on your iPhone as a backup.</li>
+  <li>The Parakeet model (about 450 MB) is downloaded once, over Wi-Fi, from Hugging Face (a public model host) when you first open the app. The download contains no information about you, and after that recognition needs no internet at all.</li>
   <li>With <strong>On-device only</strong> turned on (the default), recognition happens entirely on your iPhone. If you turn it off, Apple's speech service may process the audio under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
   <li>Audio is never saved and never sent to us. The microphone is only used during a listening session you start; the orange microphone indicator shows whenever it is on.</li>
 </ul>
@@ -40,6 +41,7 @@
 <h2>The keyboard</h2>
 <ul>
   <li>Typing, swipe typing and word suggestions run entirely inside the keyboard on your phone. The keyboard makes no network requests and does not record what you type.</li>
+  <li>If you fix a misheard name right after dictating (for example change "odigent" to "Audigent"), the keyboard saves that fix to your Dictionary and Snippets on your phone so it's spelled right next time. Nothing else you type is kept.</li>
   <li>"Allow Full Access" lets the keyboard pass text to and from the DR Voice Type app on your phone (the dictated text, and the text before your cursor so punctuation and capitals fit). It is needed only for voice.</li>
 </ul>
 
@@ -48,10 +50,11 @@
   <li>Your settings, Dictionary and Snippets.</li>
   <li>History: your last 100 dictations, so you can find or re-insert them. You can clear it any time in the History tab.</li>
   <li>All of this stays on your device and is deleted when you delete the app.</li>
+  <li><strong>iCloud sync:</strong> if you're signed in to iCloud, your Dictionary and Snippets are kept the same on your iPhone and the DR Voice Type Mac app through your own iCloud account (Apple's iCloud key-value storage). We can't see this data; it's covered by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Your dictations and history are never synced.</li>
 </ul>
 
 <h2>What we collect</h2>
-<p>We (the developer) receive none of your data. We don't run servers, we don't use analytics or advertising SDKs, and we don't track you across apps or websites. The only ways data leaves your phone are the two described above, both under your control: the optional Claude upgrade (text sent to Anthropic with your own key), and Apple's speech service if you turn off "On-device only".</p>
+<p>We (the developer) receive none of your data. We don't run servers, we don't use analytics or advertising SDKs, and we don't track you across apps or websites. The only ways data leaves your phone are described above, all under your control: the optional Claude upgrade (text sent to Anthropic with your own key), Apple's speech service if you turn off "On-device only", and your Dictionary and Snippets in your own iCloud if you use iCloud. The one-time Parakeet model download sends no information about you.</p>
 
 <h2>Children</h2>
 <p>The app is not directed at children and collects no personal information from anyone.</p>
